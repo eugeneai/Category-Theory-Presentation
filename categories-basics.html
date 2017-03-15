@@ -348,7 +348,7 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
         <section class="slide">
             <h2>Коммутативные диаграммы</h2>
 
-            <p>Два пути, исходящие из одного и того же исходного объекта и приходящие в один и тот же конечный объект являются одним и тем же (equal).</p>
+            <p>Два пути, исходящие из одного и того же исходного объекта и приходящие в один и тот же конечный объект, являются одним и тем же (are equal).</p>
             <figure class="left" style="max-width: 40%;margin-left: 10%;">
                 <img
                     src="categories/img/mp/commutative-diagram-assoc.png"
@@ -367,18 +367,18 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
                 </figcaption>
             </figure>
         </section>
-        <section class="slide">
-            <h2>Вопросы!</h2>
+        <!-- <section class="slide">
+             <h2>Вопросы!</h2>
 
-            <figure style="width:70%; margin:0 auto">
-                <img src="categories/img/batquestion.jpg" width="100%"/>
-                <figcaption>
-                    <em>- Шутку поймут только французы -</em>
-                </figcaption>
-            </figure>
-        </section>
+             <figure style="width:70%; margin:0 auto">
+             <img src="categories/img/batquestion.jpg" width="100%"/>
+             <figcaption>
+             <em>- Шутку поймут только французы -</em>
+             </figcaption>
+             </figure>
+             </section> -->
         <section class="slide">
-            <h2>Это категории или нет?</h2>
+            <h2>Какие из конструкций - это категории?</h2>
             <p>Пусть \(\ob{\C},\hom{\C}\) - фиксированные коллекции, установим правильные композиции ∘.</p>
             <figure class="left">
                 <img src="categories/img/mp/cat-example1.png" alt="Category example 1"/>
@@ -401,7 +401,7 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </figure>
         </section>
         <section class="slide">
-            <h2>Это категории или нет?</h2>
+            <h2>Еще примеры конструкций</h2>
             <figure class="left">
                 <img src="categories/img/mp/cat-example4.png" alt="Category example 4"/>
                 <figcaption class="slide">
@@ -445,7 +445,7 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </ul>
         </section>
         <section class="slide">
-            <h2>Категории везде?</h2>
+            <h2>Известные категории</h2>
             <img class="right" src="categories/img/cats-everywhere.jpg" alt="Cats everywhere"/>
             <ul>
                 <li>\(\Mon\): (моноиды, морфизмы моноидов,∘),</li>
@@ -458,12 +458,12 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </ul>
         </section>
         <section class="slide">
-            <h2>Примеры более мелкого масштаба</h2>
+            <h2>Примеры простых категорий</h2>
 
             <h3>Строки \(\Str\)</h3>
             <img class="right" style="max-width:17%; margin-left: 10%;" src="categories/img/mp/strings.png" alt="Monoids are one object categories"/>
             <ul>
-                <li> \(\ob{\Str}\) - "формальный объект", </li>
+                <li> \(\ob{\Str}\) - формальный объект, </li>
                 <li> \(\hom{\Str}\) - каждая строка, </li>
                 <li> ∘ - операция конкатенации <code>(++)</code> </li>
             </ul>
@@ -473,11 +473,14 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </ul>
         </section>
         <section class="slide">
-            <h2>Конечные примеры</h2>
+            <h2>Пример простой категории</h2>
 
             <h3>Граф \(\G\)</h3>
             <figure class="right" style="max-width:40%" >
                 <img src="categories/img/mp/graph-category.png" alt="Each graph is a category"/>
+                <figcaption>
+                    Исходный граф, а не категория
+                </figcaption>
             </figure>
             <ul>
                 <li> \(\ob{\G}\) - вершины графа,</li>
@@ -512,7 +515,7 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
 
             <ul><li>\(\ob{P}={P}\),
             </li><li>\(\hom{x,y}=\{x≤y\} ⇔ x≤y\),
-            </li><li>\((y≤z) \circ (x≤y) = (x≤z) \).
+            </li><li>\((y≤z) \circ (x≤y) = (x≤z);\qquad \forall Z\in P (Z\leq Z) \).
             </li></ul>
 
             <p><em class="yellow"><b class="yellow">Не больше одного</b> морфизма между любыми двумя объектами.</em></p>
@@ -524,14 +527,14 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
 
             <img class="right" src="categories/img/mp/set.png" alt="Any set can be a category"/>
             <h3>Любое множество</h3>
-            <p>Любое множество \(E: \ob{E}=E, \hom{x,y}=\{x\} ⇔  x=y \)</p>
+            <p>Любое множество \(E: \ob{E}=E,\quad \hom{x,y}=\{x\} ⇔  x=y \).</p>
             <p class="yellow">Только тождества.</p>
         </section>
         <section class="slide">
-            <h2 id="choice">Выбор</h2>
+            <h2 id="choice">Выбор категории для представления</h2>
             <p>Один и тот же объект исследования представим разными способами в виде категорий.</p>
-            <p>Можно выбирать то, что будет объектами, морфизмами и композициями.</p>
-            <p>Например: <strong>Str</strong> и дискретную сигнатуру (Σ<sup>*</sup>).</p>
+            <p>Нужно выбирать то, что будет объектами, морфизмами и композициями.</p>
+            <p>Например: строки можно представить в виде категории <strong>Str</strong> или дискретных категорий множеств \(\Sigma\) и \(\Sigma^*\).</p>
         </section>
         <section class="slide">
             <h2 class="base1">Категорийные (Categorical) свойства</h2>
@@ -539,20 +542,35 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             <p class="base1">- это свойства объекта исследования, которые выражаются в терминах категорий, т.е., объектами, морфизмами и композициями.</p>
 
             <ul><li> <em class="yellow">Дуальность</em>: \(\D\) - суть \(\C\) с обращенными стрелками.
-            </li><li> <em class="yellow">Инициал</em>: \(Z\in\ob{\C}\) такой, что \(∀Y∈\ob{\C}, \#\hom{Z,Y}=1\)
-	            <br/> Уникальный "с точностью до изоморфизма".
+            </li><li> <em class="yellow">Инициал</em>: \(Z\in\ob{\C}\) такой, что \(∀Y∈\ob{\C}, |\hom{Z,Y}|=1\),
+	            <br/> уникальный "с точностью до изоморфизма".
             </li><li> <em class="yellow">Терминал</em>: \(T\in\ob{\C}\) такой, что \(T\) - это инициал в дуальной категории \(\C\).
             </li><li> ...
             </li></ul>
         </section>
         <section class="slide">
             <h2>Двоственность (Duality)</h2>
-            <p> - соответствие свойств категории \(\C\) и двоственными свойствам <em>двойственной категории</em> \(\C^{op}\).
-                <figure>
-                    <figcaption>
-                    </figcaption>
-                </figure>
-            </p>ь
+            <p>
+                <ul>
+                    <li> соответствие свойств категории \(\C\) свойствам <em>двойственной категории</em> \(\C^{op}\).</li>
+                    <li> Пересталяем в каждом \(f:A\to B\) \(A\) и \(B\) местами, получаем \(f^{op}:B\to A\);</li>
+                    <li> В композициях переставляем порядок следования морфизмов: \(g\circ f\) \(\to\) \(f\circ g\).</li>
+                </ul>
+                <img class="left" style="width:30%;max-width:30%;margin:1em;" src="categories/img/ai/set-func-composing.svg" alt="morphisms"/>
+                <img class="right" style="width:30%;max-width:30%;margin:1em;" src="categories/img/ai/set-func-composing-op.svg" alt="morphisms"/>
+            </p>
+        </section>
+        <section class="slide">
+            <h2>Двоственность (Duality)</h2>
+            <p>
+                \(f\colon A\to B\) - <em>мономорфизм</em>, если из \(f\circ g=f\circ h\) следует \(g=h\). <br/>
+                Построение "дуала" \(g\circ f=h\circ f\) и \(g=h\) создает морфизм \(f\colon B\to A\),
+                который является <em>эпиморфизмом</em>. Свойства "мономорфизм" и "эпиморфизм" двойственны.
+
+            </p>
+                <img class="left" style="width:30%;max-width:30%;margin:1em;" src="categories/img/ai/monomorphism.svg" alt="morphisms"/>
+                <img class="right" style="width:30%;max-width:30%;margin:1em;" src="categories/img/ai/epimorphism.svg" alt="morphisms"/>
+            </p>
         </section>
         <section class="slide">
             <h2>Инициал, Терминал</h2>
@@ -1223,12 +1241,12 @@ depth = cata phi where
          });
         </script>
         <!-- Y theme -->
+        <!--
         <script type="text/javascript" async
                 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
         </script>
-        <!--
+         -->
              <script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-           -->
         <script src="js/highlight/highlight.pack.js"></script>
         <script>
          hljs.initHighlightingOnLoad();
