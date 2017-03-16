@@ -73,9 +73,13 @@
 
         <section class="slide">
             <div style="text-align:center; position:absolute; top: 2em; font-size: .9em; width: 100%">
-                <h1 style="position: relative;">Теория категорий <span class="and">&amp;</span> программирование</h1>
-                <div><em class="base01">представлено на</em> <a href="http://www.meetup.com/riviera-scala-clojure">Rivieria Scala Clojure</a><br/> (Эта презентация использует Haskell)</div>
-                <author><em class="base01">автор -</em> <a href="http://yannesposito.com">Yann Esposito</a></author>
+                <h1 style="position: relative;">Основы теории категорий</h1>
+                <div>
+                    <!--
+                    <em class="base01">представлено на</em> <a href="http://www.meetup.com/riviera-scala-clojure">Rivieria Scala Clojure</a><br/> (Эта презентация использует Haskell)
+                     -->
+                </div>
+                <author><em class="base01">авторы -</em> <a href="http://yannesposito.com">Yann Esposito</a>, Евгений Черкашин</author>
                 <div style="font-size:.8em">
                     <twitter>
                         <a href="http://twitter.com/yogsototh">@yogsototh</a>,
@@ -86,7 +90,7 @@
                 </div>
                 <div class="base01" style="font-size: .5em; font-weight: 400; font-variant:italic">
                     <div class="button" style="margin: .5em auto;border: solid 2px; padding: 5px; width: 11em; border-radius: 1em; background:rgba(255,255,255,0.05);"  onclick="javascript:gofullscreen();">ПОЛНОЭКРАННЫЙ РЕЖИМ</div>
-                    HTML-презентация: используйте стрелки, пробел, проводите пальцем.
+                    HTML-презентация: используйте стрелки, пробел, сдвигайте экран и т.д.
                 </div>
             </div>
         </section>
@@ -755,8 +759,11 @@ b; //              f2
 
         <section class="slide">
             <h2>Естественные преобразования</h2>
-
-            <img style="background:white;width:50%;" src="categories/img/wiki/Natural_transformation.svg"/>
+            <p>\(F\) и \(G\) функторы из кат. \(\C\) и \(\D\), тогда естественное преобразование \(η\) из \(F\) в \(G\)
+                ставит в соотв. каждый объект \(X\in C\) морфизм \(ηX : F(X) → G(X)\in\D\) такой, чтоб
+                для каждого морфизма \(f : X → Y \in \C\), выполнялось \(ηY ∘ F(f) = G(f) ∘ ηX\).
+            </p>
+            <img style="background:white;width:40%;" src="categories/img/wiki/Natural_transformation.svg"/>
         </section>
 
         <section class="slide">
