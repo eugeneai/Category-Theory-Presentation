@@ -556,11 +556,11 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </li></ul>
         </section>
         <section class="slide">
-            <h2>Двоственность (Duality)</h2>
+            <h2>Двойственность (Duality)</h2>
             <p>
                 <ul>
                     <li> соответствие свойств категории \(\C\) свойствам <em>двойственной категории</em> \(\C^{op}\).</li>
-                    <li> Пересталяем в каждом \(f:A\to B\) \(A\) и \(B\) местами, получаем \(f^{op}:B\to A\);</li>
+                    <li> Переставляем в каждом \(f:A\to B\) \(A\) и \(B\) местами, получаем \(f^{op}:B\to A\);</li>
                     <li> В композициях переставляем порядок следования морфизмов: \(g\circ f\) \(\to\) \(f\circ g\).</li>
                 </ul>
                 <img class="left" style="width:30%;max-width:30%;margin:1em;" src="categories/img/ai/set-func-composing.svg" alt="morphisms"/>
@@ -568,7 +568,7 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </p>
         </section>
         <section class="slide">
-            <h2>Двоственность (Duality)</h2>
+            <h2>Двойственность (Duality)</h2>
             <p>
                 \(f\colon A\to B\) - <em>мономорфизм</em>, если из \(f\circ g=f\circ h\) следует \(g=h\). <br/>
                 Построение "дуала" \(g\circ f=h\circ f\) и \(g=h\) создает морфизм \(f\colon B\to A\),
@@ -583,9 +583,9 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             <h2>Инициал, Терминал</h2>
             <p><em>Инициал </em> - объект \(I\) категории \(\C\) такой, что для каждого \(X\in \C\) существует в точности один морфизм \(I\to X\).<br/>
 
-                Двоцственным инициалу является <em>терминальный</em> объект \(T\) ... \(X\in\C\) такой, что существует единственный морфизм \(X\to T\).<br/>
+                Двойственным инициалу является <em>терминальный</em> объект \(T\) ... \(X\in\C\) такой, что существует единственный морфизм \(X\to T\).<br/>
 
-                Если объект и инициал и терминал, то он назвыается <em>нулевым объектом</em>.
+                Если объект и инициал и терминал, то он называется <em>нулевым объектом</em>.
                 <img src="categories/img/wiki/220px-Terminal_and_initial_object.png" style="width:40%;max-width:40%;margin:1em;">
             </p>
         </section>
@@ -808,7 +808,7 @@ mToList Just x  = [x]</pre>
             <p><code>toMaybe</code> - это естественное преобразование. Оно также морфизм из <code>Maybe</code> в <code>[]</code> в категории эндофункторов \(\Hask\).</p>
             <img style="float:left;width:30%" src="categories/img/mp/nattrans-maybe-list.png" alt="natural transformation commutative diagram"/>
             <figure style="float:right;width:60%">
-                <img style="width:40%" src="categories/img/mp/maybe-list-endofunctor-morphsm.png" alt="relation between [] and Maybe"/> <figcaption>Здесь <span class="red">нет изоморфов</span>.<br/> Подсказка: <code>Bool</code>-списки FIXME: длиннее, чем 1. </figcaption>
+                <img style="width:40%" src="categories/img/mp/maybe-list-endofunctor-morphsm.png" alt="relation between [] and Maybe"/> <figcaption>Здесь <span class="red">нет изоморфов</span>.
             </figure>
 
 
