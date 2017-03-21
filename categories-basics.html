@@ -22,9 +22,14 @@
 
         <!-- <link rel="stylesheet" href="themes/transition/fade.css"> -->
 	    <!-- Style theme. More available in /themes/style/ or create your own. -->
-        <!-- <link rel="stylesheet" href="themes/style/web-2.0.css"> -->
+
+        <link rel="stylesheet" href="themes/style/web-2.0.css">
+        <link rel="stylesheet" href="themes/my/floaters.css">
+
+        <!--
         <link rel="stylesheet" href="themes/style/y/main.css" />
         <link rel="stylesheet" href="themes/style/y/solarized.css" />
+        -->
 	    <!-- Required Modernizr file -->
 	    <script src="modernizr.custom.js"></script>
         <script>
@@ -72,46 +77,48 @@
         <!-- Begin slides. Just make elements with a class of slide. -->
 
         <section class="slide">
-            <div style="text-align:center; position:absolute; top: 2em; font-size: .9em; width: 100%">
-                <h1 style="position: relative;">Основы теории категорий</h1>
-                <div>
+            <div style="text-align:center; font-size: .9em; width: 100%">
+                <h1>Основы теории категорий</h1>
                     <!--
-                    <em class="base01">представлено на</em> <a href="http://www.meetup.com/riviera-scala-clojure">Rivieria Scala Clojure</a><br/> (Эта презентация использует Haskell)
-                     -->
+                <div>
+                         <em class="base01">представлено на</em> <a href="http://www.meetup.com/riviera-scala-clojure">Rivieria Scala Clojure</a><br/> (Эта презентация использует Haskell)
                 </div>
-                <author><em class="base01">авторы -</em> <a href="http://yannesposito.com">Yann Esposito</a>, Евгений Черкашин</author>
-                <div style="font-size:.8em">
-                    <twitter>
-                        <a href="http://twitter.com/yogsototh">@yogsototh</a>,
-                    </twitter>
-                    <googleplus>
-                        <a href="https://plus.google.com/117858550730178181663">+yogsototh</a>
-                    </googleplus>
-                </div>
-                <div class="base01" style="font-size: .5em; font-weight: 400; font-variant:italic">
-                    <div class="button" style="margin: .5em auto;border: solid 2px; padding: 5px; width: 11em; border-radius: 1em; background:rgba(255,255,255,0.05);"  onclick="javascript:gofullscreen();">ПОЛНОЭКРАННЫЙ РЕЖИМ</div>
-                    HTML-презентация: используйте стрелки, пробел, сдвигайте экран и т.д.
+                       -->
+                <div style="float:left;">
+                    <author><em class="base01">авторы -</em> <a href="http://yannesposito.com">Yann Esposito</a>, Евгений Черкашин</author>
+                    <div style="font-size:.8em">
+                        <twitter>
+                            <a href="http://twitter.com/yogsototh">@yogsototh</a>,
+                        </twitter>
+                        <googleplus>
+                            <a href="https://plus.google.com/117858550730178181663">+yogsototh</a>
+                        </googleplus>
+                    </div>
+                    <div class="base01" style="font-size: .5em; font-weight: 400; font-variant:italic">
+                        <div class="button" style="margin: .5em auto;border: solid 2px; padding: 5px; width: 11em; border-radius: 1em; background:rgba(255,255,255,0.05);"  onclick="javascript:gofullscreen();">ПОЛНОЭКРАННЫЙ РЕЖИМ</div>
+                        HTML-презентация: используйте стрелки, пробел, сдвигайте экран и т.д.
+                    </div>
                 </div>
             </div>
         </section>
         <!--
-        <section class="slide">
-            <h2>План</h2>
-            <ul style="font-size: 2em; font-weight:bold">
-                <li><span class="yellow">Общий обзор</li>
-                    <li>Определения</li>
-                    <li>Приложения</li>
-            </ul>
-        </section>
+             <section class="slide">
+             <h2>План</h2>
+             <ul style="font-size: 2em; font-weight:bold">
+             <li><span class="yellow">Общий обзор</li>
+             <li>Определения</li>
+             <li>Приложения</li>
+             </ul>
+             </section>
 
-        <section class="slide">
-            <h2 id="not-really-about-cat-glory">Мы не будем говорить о Cat <span class="and">&amp;</span> glory</h2>
-            <figure>
-                <img src="categories/img/categlory.jpg" alt="Cat n glory" /> <figcaption>автор картины - Tokuhiro Kawai (川井徳寛)</figcaption>
-            </figure>
+             <section class="slide">
+             <h2 id="not-really-about-cat-glory">Мы не будем говорить о Cat <span class="and">&amp;</span> glory</h2>
+             <figure>
+             <img src="categories/img/categlory.jpg" alt="Cat n glory" /> <figcaption>автор картины - Tokuhiro Kawai (川井徳寛)</figcaption>
+             </figure>
 
-        </section>
-        -->
+             </section>
+           -->
         <section class="slide">
             <h2 id="general-overview">Общий обзор</h2>
             <div style="float:right; width: 18%">
@@ -141,15 +148,15 @@
             </ul>
         </section>
         <!--
-        <section class="slide">
-            <h2 id="math-programming-relation">Отношение математики к программированию</h2>
-            <img class="right" src="categories/img/buddha.gif" alt="Buddha Fractal"/>
-            <p>Программирование <em><span class="yellow">это и есть</span></em> математика</p>
-            <p>Тесная связь между теорией типов и теорией категорий.</p>
-            <p>Не убедил?<br />Проблема в <em>терминологии</em>.</p>
-            <p>Одна из задач теории категорий - это создать <em>общую (homogeneous) терминологию</em> для разных областей исследований (наук).</p>
-        </section>
-        -->
+             <section class="slide">
+             <h2 id="math-programming-relation">Отношение математики к программированию</h2>
+             <img class="right" src="categories/img/buddha.gif" alt="Buddha Fractal"/>
+             <p>Программирование <em><span class="yellow">это и есть</span></em> математика</p>
+             <p>Тесная связь между теорией типов и теорией категорий.</p>
+             <p>Не убедил?<br />Проблема в <em>терминологии</em>.</p>
+             <p>Одна из задач теории категорий - это создать <em>общую (homogeneous) терминологию</em> для разных областей исследований (наук).</p>
+             </section>
+           -->
         <section class="slide">
             <h2 id="vocabulary">Терминология</h2>
             <img class="right" src="categories/img/mindblown.gif" alt="mind blown"/>
@@ -159,48 +166,48 @@
             </blockquote>
         </section>
         <!--
-        <section class="slide">
-            <h2 id="programmer-translation">Перевод терминов для программистов</h2>
-            <img class="right" src="categories/img/readingcat.jpg" alt="lolcat"/>
-            <table style="width:60%">
-                <tr><th>
-                    Математический
-                </th><th>
-                    Программистский
-                </th></tr>
-                <tr><td>
-                    Морфизм
-                </td><td>
-                    Стрелка
-                </td></tr>
-                <tr><td>
-                    Моноид
-                </td><td>
-                    Строковый тип (String-like)
-                </td></tr>
-                <tr><td>
-                    Отношение предпорядка (Preorder)
-                </td><td>
-                    Ациклический граф
-                </td></tr>
-                <tr><td>
-                    Изоморф
-                </td><td>
-                    Тот же самый, тождественный
-                </td></tr>
-                <tr><td>
-                    Естественные преобразования
-                </td><td>
-                    rearrangement function
-                </td></tr>
-                <tr><td>
-                    Прикольная категория
-                </td><td>
-                    LOLCat
-                </td></tr>
-            </table>
-        </section>
-        -->
+             <section class="slide">
+             <h2 id="programmer-translation">Перевод терминов для программистов</h2>
+             <img class="right" src="categories/img/readingcat.jpg" alt="lolcat"/>
+             <table style="width:60%">
+             <tr><th>
+             Математический
+             </th><th>
+             Программистский
+             </th></tr>
+             <tr><td>
+             Морфизм
+             </td><td>
+             Стрелка
+             </td></tr>
+             <tr><td>
+             Моноид
+             </td><td>
+             Строковый тип (String-like)
+             </td></tr>
+             <tr><td>
+             Отношение предпорядка (Preorder)
+             </td><td>
+             Ациклический граф
+             </td></tr>
+             <tr><td>
+             Изоморф
+             </td><td>
+             Тот же самый, тождественный
+             </td></tr>
+             <tr><td>
+             Естественные преобразования
+             </td><td>
+             rearrangement function
+             </td></tr>
+             <tr><td>
+             Прикольная категория
+             </td><td>
+             LOLCat
+             </td></tr>
+             </table>
+             </section>
+           -->
         <!-- MY: -->
 
         <section class="slide">
@@ -277,23 +284,23 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
         </section>
 
         <!--
-        <section class="slide">
-            <h2>План</h2>
-            <ul style="font-size: 2em; font-weight: bold">
-                <li>Общий обзор</li>
-                <li> <span class="yellow">Определения</span>
-                    <ul class="base01" style="border-left: 2px solid; padding-left: 1em; font-size: .6em; float: right; font-weight: bold; margin: 0 0 0 1em">
-                        <li>Категории</li>
-                        <li>Интуитивное<br/> понимание</li>
-                        <li>Примеры</li>
-                        <li>Функторы</li>
-                        <li>Примеры</li>
-                    </ul>
-                </li>
-                <li>Приложения</li>
-            </ul>
-        </section>
-        -->
+             <section class="slide">
+             <h2>План</h2>
+             <ul style="font-size: 2em; font-weight: bold">
+             <li>Общий обзор</li>
+             <li> <span class="yellow">Определения</span>
+             <ul class="base01" style="border-left: 2px solid; padding-left: 1em; font-size: .6em; float: right; font-weight: bold; margin: 0 0 0 1em">
+             <li>Категории</li>
+             <li>Интуитивное<br/> понимание</li>
+             <li>Примеры</li>
+             <li>Функторы</li>
+             <li>Примеры</li>
+             </ul>
+             </li>
+             <li>Приложения</li>
+             </ul>
+             </section>
+           -->
         <section class="slide">
             <h2>Категории</h2>
 
@@ -594,25 +601,25 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </p>
         </section>
         <!--
-        <section class="slide">
-            <h2>Декартов квадрат/Кодекартов квадрат (Pushout, Pullup)</h2>
-            <p>
-                <figure>
-                    <figcaption>
-                    </figcaption>
-                </figure>
-            </p>
-        </section>
-        <section class="slide">
-            <h2>Конус/коконус</h2>
-            <p>
-                <figure>
-                    <figcaption>
-                    </figcaption>
-                </figure>
-            </p>
-        </section>
-        -->
+             <section class="slide">
+             <h2>Декартов квадрат/Кодекартов квадрат (Pushout, Pullup)</h2>
+             <p>
+             <figure>
+             <figcaption>
+             </figcaption>
+             </figure>
+             </p>
+             </section>
+             <section class="slide">
+             <h2>Конус/коконус</h2>
+             <p>
+             <figure>
+             <figcaption>
+             </figcaption>
+             </figure>
+             </p>
+             </section>
+           -->
         <section class="slide">
             <h2 id="isomorph">Изоморфизм</h2>
             <p>
@@ -671,23 +678,23 @@ h( g(f(x)) ) = (1 + x)^2 + (1 + x)^2
             </li></ul>
         </section>
         <!--
-        <section class="slide">
-            <h2>План</h2>
-            <ul style="font-size: 2em; font-weight:bold">
-                <li>Общий обзор</li>
-                <li>Определения</li>
-                <li><span class="yellow">Приложения
-                    <ul class="base01" style="border-left: 2px solid; padding-left: 1em; font-size: .6em; float: right; font-weight: bold; margin: -4em 0 0 1em">
-                        <li>Категория \(\Hask\)
-                        </li><li> Функторы
-                        </li><li> Естественные <br/>преобразования
-                        </li><li> Монады
-                        </li><li> κατα-морфизмы
-                        </li></ul>
-                </li>
-            </ul>
-        </section>
-        -->
+             <section class="slide">
+             <h2>План</h2>
+             <ul style="font-size: 2em; font-weight:bold">
+             <li>Общий обзор</li>
+             <li>Определения</li>
+             <li><span class="yellow">Приложения
+             <ul class="base01" style="border-left: 2px solid; padding-left: 1em; font-size: .6em; float: right; font-weight: bold; margin: -4em 0 0 1em">
+             <li>Категория \(\Hask\)
+             </li><li> Функторы
+             </li><li> Естественные <br/>преобразования
+             </li><li> Монады
+             </li><li> κατα-морфизмы
+             </li></ul>
+             </li>
+             </ul>
+             </section>
+           -->
         <section class="slide">
             <h2>Категория Hask</h2>
 
@@ -753,8 +760,8 @@ b; //              f2
         <section class="slide">
             <h2>Расслоенное произведение, Декартов квадрат, Коамальгама (Pullback)</h2>
             <p> - предел диаграммы, состоящей из двух морфизмов: \(X\to Z\leftarrow Y\), часто обозначают как \(X\times _{Z}Y\).</p>
-            <img class="left" style="background:white;width:40%;" src="categories/img/wiki/125px-Categorical_pullback.png\"/>
-                                                                       <img class="right" style="background:white;width:40%;" src="categories/img/wiki/225px-Categorical_pullback_expanded.png"/>
+            <img class="left" style="background:white;width:40%;" src="categories/img/wiki/125px-Categorical_pullback.png"/>
+            <img class="right" style="background:white;width:40%;" src="categories/img/wiki/225px-Categorical_pullback_expanded.png"/>
         </section>
 
         <section class="slide">
@@ -1360,10 +1367,10 @@ depth = cata phi where
         </script>
         <!-- Y theme -->
         <!--
-        <script type="text/javascript" async
-                src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-        </script>
-        -->
+             <script type="text/javascript" async
+             src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+             </script>
+           -->
         <script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script src="js/highlight/highlight.pack.js"></script>
         <script>
